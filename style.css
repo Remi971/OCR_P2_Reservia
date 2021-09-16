@@ -44,7 +44,6 @@ body {
      align-items: center;
      width: 100%;
      flex-wrap: wrap;
-
  }
 
  .navbar--logo {
@@ -59,9 +58,11 @@ body {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
  }
 
  .navbar__nav--link {
-     display: block;
+     width: 150px;
+     text-align: center;
      padding: 1rem;
  }
