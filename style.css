@@ -1,0 +1,67 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+/* 
+INDEX 
+
+1 - Header : 37
+
+*/
+
+
+
+/* Variables */
+:root {
+    --primary-color: #0665FC;
+    --light-color: #DEEBFF;
+    --bg-color: #F2F2F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Raleway;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    padding: .5rem;
+}
+
+/* # Header # */
+
+/* ## navbar ## */
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     flex-wrap: wrap;
+
+ }
+
+ .navbar--logo {
+    padding: 1rem;
+ }
+
+ .navbar--login {
+     padding: 1rem;
+ }
+
+ .navbar__nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .navbar__nav--link {
+     display: block;
+     padding: 1rem;
+ }
