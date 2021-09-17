@@ -5,25 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Reservia</title>
-    <script src="https://kit.fontawesome.com/4e6f889c4e.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/4e6f889c4e.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
-    <div class="container">
+    <div class="app-container">
         <header class="header">
             <nav class="navbar">
                 <div class="navbar--logo"><img src="./assets/Reservia.svg" alt="logo"></div>
                 <div class="navbar--login"><p class="navbar--login-txt">S'inscrire</p></div>
                 <ul class="navbar__nav">
-                    <li class="navbar__nav--link"><a href="#hebergements" >Hébergements</a></li>
+                    <li class="navbar__nav--link active" ><a href="#hebergements" >Hébergements</a></li>
                     <li class="navbar__nav--link"><a href="#activite">Activités</a></li>
                 </ul>
             </nav>
             <div class="search">
-                <h3 class="search--titre" >Trouvez votre hébergement pour des vacances de rêve</h3>
+                <h2 class="search--titre" >Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p class="search--sous-titre" >En plein centre ville ou en plaine nature</p>
                 <div class="search__box">
-                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="search__box--icon" ><i class="fas fa-solid fa-location-arrow"></i></div>
                     <input class="search__box--input" type="text">
                     <button class="search__box--btn" ><span>Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>

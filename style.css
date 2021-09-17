@@ -1,5 +1,5 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 
 /* 
 INDEX 
@@ -30,39 +30,121 @@ body {
     align-items: center;
 }
 
-.container {
+.app-container {
     max-width: 1200px;
-    padding: .5rem;
+    padding: 1rem .5rem;
 }
 
 /* # Header # */
-
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* ## navbar ## */
  .navbar {
      display: flex;
-     justify-content: space-between;
      align-items: center;
      width: 100%;
      flex-wrap: wrap;
  }
 
  .navbar--logo {
-    padding: 1rem;
+    padding: .5rem 1.5rem;
+    width: 50%;
  }
 
  .navbar--login {
-     padding: 1rem;
+     padding: .5rem 1.5rem;
+     width: 50%;
+ }
+
+ .navbar--login-txt {
+     text-align: right;
+     color: var(--primary-color);
+     font-weight: 800;
  }
 
  .navbar__nav {
-    padding: 1rem;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    list-style: none;
  }
 
  .navbar__nav--link {
-     width: 150px;
-     text-align: center;
+     width: 50%;
+     height: 3rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+ }
+
+ .navbar__nav--link>a {
+     text-decoration: none;
+     color: black;
+ }
+
+ .navbar__nav--link.active {
+    border-bottom: 3px solid var(--primary-color);
+ }
+ .navbar__nav--link.active>a {
+     color: var(--primary-color);
+ }
+
+ /* ## Search ## */
+ .search {
      padding: 1rem;
  }
+
+ .search--titre {
+    padding: 1rem 0 .5rem 0;
+    font-size: 1.3rem;
+ }
+
+ .search--sous-titre {
+     margin: .5rem 0;
+ }
+
+ .search__box {
+     display: flex;
+     width: 100%;
+     height: 3rem;
+ }
+.search__box--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    border-radius: .5rem 0 0 .5rem;
+    width: 3rem;
+    height: 100%;
+}
+
+ .fa-location-arrow {
+     color: black;
+     width: .5rem;
+ }
+.search__box--input {
+    border-left: none;
+    border-right: none;
+    height: 100%;
+    border-top: 1px solid var(--bg-color);
+    border-bottom: 1px solid var(--bg-color);
+}
+.search__box--btn {
+    border-radius: .5rem;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    height: 100%;
+}
+
+.search__box--btn>span {
+    /* visibility: hidden; */
+}
