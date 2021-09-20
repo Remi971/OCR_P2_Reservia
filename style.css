@@ -233,6 +233,7 @@ body {
     flex-direction: column;
     background-color: var(--bg-color);
     padding: 1rem;
+    row-gap: 1rem;
 }
 .populaire__titre {
     display: flex;
@@ -242,13 +243,32 @@ body {
 
 .populaire__card {
     display: flex;
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
     background-color: white;
+    overflow: hidden;
     width: 100%;
-    height: 5rem;
+}
+.populaire__card--img {
+    width: 40%;
+}
+.populaire__card--img>img {
+    width: 100%;
+    border-radius: 0.5rem 0 0 .5rem;
+    object-fit: cover;
 }
 
-.populaire__card--img {
-    width: 100px;
-    border-top-left-radius: 0.3rem;
+.populaire__card--description {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+}
+
+.etoiles {
+    display: flex;
+    list-style: none;
+    justify-self: flex-end;
+}
+
+.fa-star {
+    color: var(--primary-color);
 }
