@@ -28,11 +28,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .app-container {
     max-width: 1200px;
     padding: 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
 /* # Header # */
@@ -200,11 +204,51 @@ body {
 
 .search__info {
     display: flex;
-    align-items: center;
+    align-items: start;
+    justify-content: start;
 }
-.search__info>i {
+
+.search__info--icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.search__info>p {
+    margin-top: 0.25rem;
+    margin-left: 0.25rem;
+}
+.search__info--icon>i {
     color: var(--primary-color);
     margin: 1rem;
 }
 
-/* Section Hébergement */
+/* Aside : Les plus populaires */
+.populaire {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    padding: 1rem;
+}
+.populaire__titre {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.populaire__card {
+    display: flex;
+    border-radius: 0.3rem;
+    background-color: white;
+    width: 100%;
+    height: 5rem;
+}
+
+.populaire__card--img {
+    width: 100px;
+    border-top-left-radius: 0.3rem;
+}
