@@ -1,0 +1,44 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+
+
+/* Variables */
+:root {
+    --primary-color: #0665FC;
+    --light-color: #DEEBFF;
+    --bg-color: #F2F2F2;
+}
+/* Général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Raleway;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app-container {
+    max-width: 1500px;
+    padding: 1rem .5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+
+
+
+
+
+
