@@ -130,63 +130,7 @@
     display: none;
 }
 
-/* Responsive */
 
-@media (min-width: 400px) {
-    .search__box--btn>i {
-        display: none;
-    }
-    .search__box--btn>span {
-        display: inline;
-    }
-    .search__box--btn {
-        border-radius: 0 1rem 1rem 0;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .navbar {
-        flex-wrap: wrap;
-    }
-    .navbar__nav--link {
-        width: 50%;
-    }
-    .navbar__nav--link:hover {
-        border-bottom: 3px solid var(--primary-color);
-     }
-}
-
-@media screen and (min-width: 768px) {
-    .header {
-        justify-content: flex-start;
-    }
-    .search__box {
-        justify-content: flex-start;
-    }
-    .navbar--logo {
-        order: 1;
-    }
-    .navbar__nav {
-        order: 2;
-        justify-content: flex-end;
-    }
-    .navbar__nav--link {
-        padding: 0 1rem;
-    }
-    .navbar__nav--link:hover {
-        border-top: 3px solid var(--primary-color);
-     }
-    .navbar--login {
-        order: 3;
-        width: 150px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .search {
-        align-self: flex-start;
-    }
-}
 
 /* ## Filtres ## */
 .search__filters {
@@ -195,12 +139,6 @@
     
 }
 
-@media screen and (max-width: 885px) {
-    .search__filters {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
 
 .search__filters>h3 {
     margin: .5rem;
@@ -259,4 +197,68 @@
 .search__info--icon>i {
     color: var(--primary-color);
     margin: 1rem;
+}
+
+/* Responsive */
+
+@media (min-width: 400px) {
+    .search__box--btn>i {
+        display: none;
+    }
+    .search__box--btn>span {
+        display: inline;
+    }
+    .search__box--btn {
+        border-radius: 0 1rem 1rem 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+    .navbar__nav--link {
+        width: 50%;
+    }
+    .navbar__nav--link:hover {
+        border-bottom: 3px solid var(--primary-color);
+     }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        justify-content: flex-start;
+    }
+    .search__box {
+        justify-content: flex-start;
+    }
+    .navbar--logo {
+        order: 1;
+    }
+    .navbar__nav {
+        order: 2;
+        justify-content: flex-end;
+    }
+    .navbar__nav--link {
+        padding: 0 1rem;
+    }
+    .navbar__nav--link:hover {
+        border-top: 3px solid var(--primary-color);
+     }
+    .navbar--login {
+        order: 3;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .search {
+        align-self: flex-start;
+    }
+}
+@media screen and (max-width: 885px) {
+    .search__filters {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
