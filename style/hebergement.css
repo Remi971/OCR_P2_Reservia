@@ -73,12 +73,12 @@
     height: 100%;
     padding: .25rem 1rem;
 }
-.populaire__card--description>h4 {
+.populaire__card--description--txt>h4 {
     margin-bottom: .25rem;
     color: black;
 }
 
-.populaire__card--description>p {
+.populaire__card--description--txt>p {
     font-size: .9rem;
     color: black;
 }
