@@ -48,7 +48,7 @@
         max-width: 48%;
     }
     .activites__bloc {
-        display: flex;
+        
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
@@ -63,8 +63,55 @@
 }
 
 @media screen and (min-width: 1239px) {
-    .activites__bloc--card {
+    /* .activites__bloc--card {
         max-width: 24%;
+    } */
+    .activites__bloc {
+        display: grid;
+        height: 450px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .activites__bloc--card {
+        max-width: 100%;
+        height: 100%;
+    }
+    .stretch1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        max-height: 100%;
+    }
+    .normal1 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        max-height: 100%;
+    }
+    .normal2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        max-height: 100%;
+    }
+    .stretch2 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+        max-height: 100%;
+    }
+    .normal3 {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        max-height: 100%;
+    }
+    .normal4 {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+        max-height: 100%;
+    }
+    .activites__bloc--card--img {
+        height: 80%;
+        max-height: 100%;
+    }
+    .activites__bloc--card--img>img {
+        object-fit: cover;
     }
     
 }
