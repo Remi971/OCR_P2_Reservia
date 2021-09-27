@@ -119,7 +119,7 @@
 .h--titre {
     font-weight: bold;
     font-size: 1.7rem;
-    padding: 0 0 1rem 5%;
+    padding-bottom: 1rem;
 }
 .h__cards {
     flex-direction: column;
@@ -189,6 +189,9 @@
     .h__cards__item--img {
         max-height: 150px;
     }
+    .h__plus {
+        padding: 1rem 0;
+    }
 }
 @media screen and (min-width: 993px) {
     .h__cards {
@@ -203,6 +206,9 @@
     }
     .h__cards__item--img {
         max-height: 140px;
+    }
+    .h__plus {
+        padding: 1.5rem 0;
     }
 }
 @media screen and (min-width: 1240px) {
