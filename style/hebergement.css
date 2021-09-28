@@ -158,7 +158,7 @@
 .h__cards__item--img>img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .h__cards__description {
