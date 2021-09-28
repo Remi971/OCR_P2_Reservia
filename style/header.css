@@ -158,6 +158,18 @@
     margin: .5rem;
     height: 3rem;
     position: relative;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+.search__filters__element--item:hover {
+    background-color: var(--light-color);
+    border: 1px solid var(--primary-color);
+}
+.search__filters__element--item:hover>.search__filters__element--icon {
+    background-color: var(--bg-color);
+}
+.search__filters__element--item:hover>p {
+    color: var(--primary-color);
 }
 .search__filters__element--icon {
     width: 3rem;
@@ -169,6 +181,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
+    transition: all ease .3s;
 }
 .search__filters__element--icon>.blue {
     color: var(--primary-color);

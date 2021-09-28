@@ -27,7 +27,11 @@
         max-width: 425px;
     }
 }
-
+@media screen and (min-width: 1220px) {
+    .populaire {
+        height: 100%;
+    }
+}
 .populaire__titre {
     display: flex;
     justify-content: space-between;
