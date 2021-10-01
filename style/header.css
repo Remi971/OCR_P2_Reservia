@@ -112,6 +112,7 @@
 .search__box--input:focus {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    outline: none;
 }
 
 .search__box--btn {
@@ -125,8 +126,16 @@
     align-items: center;
     cursor: pointer;
     border: none;
+    transition: all ease .3s;
 }
 
+.search__box--btn:hover {
+    background-color: var(--light-color);
+    border: 1px solid var(--primary-color);
+}
+.search__box--btn:hover>span, .search__box--btn:hover>i {
+    color: var(--primary-color);
+} 
 .search__box--btn>span {
     display: none;
 }
