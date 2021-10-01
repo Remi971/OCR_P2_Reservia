@@ -194,8 +194,9 @@
 
 .search__info {
     display: flex;
-    align-items: start;
-    justify-content: start;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: flex-start;
     padding: 1rem;
 }
 
