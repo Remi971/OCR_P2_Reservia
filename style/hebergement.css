@@ -99,7 +99,7 @@
     color: var(--primary-color);
 }
 .fa-star.grey {
-    color: var(--light-color);
+    color: #e4e4e4;
 }
 
 /* Section : Hébergements */
